@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Device Manager issues / 管理器问题
+    url: https://github.com/CANmeleon/canmeleon-device-manager/issues
+    about: Report client installation, connection or software-update problems.
+  - name: VN16xx compatibility / VN16xx 兼容问题
+    url: https://github.com/CANmeleon/canmeleon-VN16xx-firmware/issues
+    about: Report VN16xx modes, Vector driver or channel-mapping issues.
