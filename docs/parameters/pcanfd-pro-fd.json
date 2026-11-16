@@ -1,0 +1,97 @@
+{
+  "product": "CANmeleon",
+  "mode": "PCAN Pro FD",
+  "scope_note": "PCAN Pro FD 模式；需配套具备 2 路 CAN 接口及对应模式授权的设备。",
+  "sections": [
+    {
+      "title": "通信能力",
+      "rows": [
+        {
+          "label": "CAN 通道",
+          "value": "支持 2 路 CAN / CAN FD",
+          "notes": "每通道支持发送和接收。"
+        },
+        {
+          "label": "报文格式",
+          "value": "11 / 29 位 ID；Classic CAN 0–8 B，CAN FD 最高 64 B",
+          "notes": "支持 Classic RTR；CAN FD 支持 BRS 开启 / 关闭。"
+        },
+        {
+          "label": "Classic CAN 速率",
+          "value": "最高 1 Mbit/s",
+          "notes": "通过上位机设置总线速率。"
+        },
+        {
+          "label": "CAN FD 数据速率",
+          "value": "最高 12 Mbit/s",
+          "notes": "仲裁段与数据段独立配置；需配套支持相应速率的收发器和总线布线。"
+        }
+      ]
+    },
+    {
+      "title": "时间戳",
+      "rows": [
+        {
+          "label": "接收硬件时间戳",
+          "value": "支持",
+          "notes": "通过 PCAN-Basic 接收接口读取报文时间戳。"
+        },
+        {
+          "label": "发送完成硬件时间戳",
+          "value": "支持",
+          "notes": "开启 PCAN_ALLOW_ECHO_FRAMES 后，从发送回显读取时间戳。"
+        },
+        {
+          "label": "时间戳分辨率（PCAN-Basic）",
+          "value": "1 µs",
+          "notes": "接收报文和发送完成回显的时间戳均以 1 µs 为步进。"
+        }
+      ]
+    },
+    {
+      "title": "典型通信性能",
+      "rows": [
+        {
+          "label": "64 字节报文传输帧率（短时）",
+          "value": "约 7,600 帧/秒",
+          "notes": "CAN FD，启用 BRS；1 Mbit/s 仲裁 / 8 Mbit/s 数据；单条总线、请求与应答双向合计。"
+        },
+        {
+          "label": "0 字节报文单向传输帧率",
+          "value": "约 20,800 帧/秒",
+          "notes": "PCAN-Basic；CAN FD 标准帧，启用 BRS；1 Mbit/s 仲裁 / 8 Mbit/s 数据；单条总线、单向。"
+        },
+        {
+          "label": "8 字节报文单向传输帧率",
+          "value": "约 19,300 帧/秒",
+          "notes": "PCAN-Basic；CAN FD 标准帧，启用 BRS；1 Mbit/s 仲裁 / 8 Mbit/s 数据；单条总线、单向。"
+        },
+        {
+          "label": "64 字节报文单向传输帧率",
+          "value": "约 10,100 帧/秒",
+          "notes": "PCAN-Basic；CAN FD 标准帧，启用 BRS；1 Mbit/s 仲裁 / 8 Mbit/s 数据；单条总线、单向。"
+        },
+        {
+          "label": "64 字节报文单向有效数据吞吐",
+          "value": "约 5.17 Mbit/s",
+          "notes": "PCAN-Basic；CAN FD 标准帧，启用 BRS；1 Mbit/s 仲裁 / 8 Mbit/s 数据；单条总线、单向。仅计算报文数据字段。"
+        }
+      ]
+    },
+    {
+      "title": "软件配套",
+      "rows": [
+        {
+          "label": "配套软件",
+          "value": "支持 PCAN-View",
+          "notes": "安装 PEAK PCAN 驱动。"
+        },
+        {
+          "label": "开发接口",
+          "value": "支持 Windows / PCAN-Basic",
+          "notes": "用于 CAN / CAN FD 应用开发。"
+        }
+      ]
+    }
+  ]
+}

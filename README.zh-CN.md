@@ -13,17 +13,21 @@ CANmeleon 通过可切换的固件，让支持的 USB-CAN/CAN FD 硬件连接不
 | [KCAN X4](https://canmeleon.com/zh/firmware/kcan/) | Windows WinUSB、kcan-bus、KCANBasic；Linux kcan 驱动 / SocketCAN | 四通道需要硬件和授权支持。 |
 | [GS USB](https://canmeleon.com/zh/firmware/gs-usb/) | Windows WinUSB / EcuBus-Pro；Linux gs_usb / SocketCAN | 通道及软件终端电阻控制取决于硬件与固件包。 |
 | [PCAN-USB](https://canmeleon.com/zh/firmware/pcan-usb/) | PCAN 驱动、PCAN-View、PCAN-Basic | 经典 CAN。 |
-| [PCAN FD / Pro FD / X6](https://canmeleon.com/zh/firmware/pcanfd/) | PCAN-View、PCAN-Basic、EcuBus-Pro、python-can | CAN/CAN FD 与通道取决于模式、硬件、驱动及授权。 |
+| [PCAN FD / Pro FD / X6](https://github.com/CANmeleon/canmeleon-pcanfd-firmware) | PCAN-View、PCAN-Basic、EcuBus-Pro、python-can | CAN/CAN FD 与通道取决于模式、硬件、驱动及授权。 |
 | [Kvaser Leaf](https://canmeleon.com/zh/firmware/kvaser-leaf/) | Leaf Light v2 模式下的 CanKing、CANlib | 经典 CAN。 |
 | [Kvaser FD](https://canmeleon.com/zh/firmware/kvaser-fd/) | Kvaser 驱动、CanKing、CANlib | CAN/CAN FD；2xHS/4xHS 模式取决于硬件、授权及固件包。 |
 | [VN16xx](https://github.com/CANmeleon/canmeleon-VN16xx-firmware) | Windows Vector 驱动、CANoe、CANalyzer、CANape、vxlapi | VN1610/VN1640A 模式和通道配置取决于硬件、固件版本与授权。 |
-| [ES582](https://canmeleon.com/zh/firmware/es582/) | ETAS 驱动、INCA；CAN/CAN FD 收发及 XCP/CCP 标定 | 在管理器中核对型号、授权和适用固件包。 |
+| [ES582](https://github.com/CANmeleon/canmeleon-es582-firmware) | ETAS 驱动、INCA；CAN/CAN FD 收发及 XCP/CCP 标定 | 在管理器中核对型号、授权和适用固件包。 |
 | [ZLG USBCAN-II](https://canmeleon.com/zh/firmware/zlg-usbcan-ii/) | ZCANPRO、CANtest、ControlCAN | 经典 CAN，使用匹配的驱动与库。 |
 | [ZLG USBCAN-2E-U](https://canmeleon.com/zh/firmware/zlg-usbcan-2e-u/) | ZCANPRO、CANtest、ControlCAN | CAN 2.0，软件设备类型选择 USBCAN-2E-U。 |
-| [ZLG USBCANFD](https://canmeleon.com/zh/firmware/zlg-usbcanfd/) | ZLG 驱动、ZCAN API | CAN/CAN FD；识别名称和通道取决于硬件及固件包。 |
+| [ZLG USBCANFD](https://github.com/CANmeleon/canmeleon-zlg-usbcanfd-firmware) | ZLG 驱动、ZCAN API | CAN/CAN FD；识别名称和通道取决于硬件及固件包。 |
 | [CANalyst-II](https://canmeleon.com/zh/firmware/canalyst-ii/) | WinUSB、USB-CAN Tool、ControlCAN | 双通道经典 CAN；选择 USB-CAN2.0 / VCI_USBCAN2。 |
 
 硬件决定接口和物理通道，运行的固件决定电脑端驱动与软件接入方式。存储空间和授权允许时可保存多种固件，每次运行一种。
+
+## 各固件特性与性能参数
+
+[查看 12 种固件参数表](docs/parameters/README.zh-CN.md)：通道模式、速率、时间戳、典型吞吐、软件接口及功能限制。
 
 ## 支持硬件
 

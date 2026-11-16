@@ -1,0 +1,72 @@
+{
+  "product": "CANmeleon",
+  "mode": "Kvaser Leaf",
+  "scope_note": "Kvaser Leaf 模式；需配套具备 1 路 CAN 接口及对应模式授权的设备。",
+  "sections": [
+    {
+      "title": "通信能力",
+      "rows": [
+        {
+          "label": "CAN 通道",
+          "value": "支持 1 路 Classic CAN",
+          "notes": "每通道支持发送和接收。"
+        },
+        {
+          "label": "报文格式",
+          "value": "11 / 29 位 ID；Classic CAN 0–8 B",
+          "notes": "支持数据帧和远程帧（RTR）。"
+        },
+        {
+          "label": "Classic CAN 速率",
+          "value": "5 kbit/s–1 Mbit/s",
+          "notes": "通过上位机设置总线速率。"
+        }
+      ]
+    },
+    {
+      "title": "时间戳",
+      "rows": [
+        {
+          "label": "接收硬件时间戳",
+          "value": "不支持；接收采用软件时间戳",
+          "notes": "接收时间记录固件处理报文的时刻。"
+        },
+        {
+          "label": "发送完成硬件时间戳",
+          "value": "支持",
+          "notes": "通过 CANlib 开启 TXACK 后读取成功发送通知的时间戳。"
+        },
+        {
+          "label": "时间戳分辨率（CANlib）",
+          "value": "默认 1 ms；可设置为 1 µs",
+          "notes": "通过 canIOCTL_SET_TIMER_SCALE 设置时间戳步进。"
+        }
+      ]
+    },
+    {
+      "title": "软件配套",
+      "rows": [
+        {
+          "label": "配套软件",
+          "value": "支持 CanKing",
+          "notes": "安装 Kvaser 驱动。"
+        },
+        {
+          "label": "开发接口",
+          "value": "支持 Windows / Kvaser CANlib",
+          "notes": "用于 Classic CAN 应用开发。"
+        }
+      ]
+    },
+    {
+      "title": "不支持的功能与使用限制",
+      "rows": [
+        {
+          "label": "CAN FD",
+          "value": "不支持",
+          "notes": "需要 CAN FD 时选择相应 CAN FD 固件模式。"
+        }
+      ]
+    }
+  ]
+}

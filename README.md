@@ -13,17 +13,21 @@ CANmeleon connects supported USB-CAN/CAN FD hardware to different CAN software e
 | [KCAN X4](https://canmeleon.com/en/firmware/kcan/) | Windows WinUSB, kcan-bus and KCANBasic; Linux kcan driver / SocketCAN | Four-channel operation requires suitable hardware and licensing. |
 | [GS USB](https://canmeleon.com/en/firmware/gs-usb/) | Windows WinUSB / EcuBus-Pro; Linux gs_usb / SocketCAN | Channel availability and software-controlled termination depend on hardware and package. |
 | [PCAN-USB](https://canmeleon.com/en/firmware/pcan-usb/) | PCAN driver, PCAN-View and PCAN-Basic | Classic CAN. |
-| [PCAN FD / Pro FD / X6](https://canmeleon.com/en/firmware/pcanfd/) | PCAN-View, PCAN-Basic, EcuBus-Pro and python-can | CAN/CAN FD availability and channels depend on mode, hardware, driver and licensing. |
+| [PCAN FD / Pro FD / X6](https://github.com/CANmeleon/canmeleon-pcanfd-firmware) | PCAN-View, PCAN-Basic, EcuBus-Pro and python-can | CAN/CAN FD availability and channels depend on mode, hardware, driver and licensing. |
 | [Kvaser Leaf](https://canmeleon.com/en/firmware/kvaser-leaf/) | CanKing and CANlib in Leaf Light v2 mode | Classic CAN. |
 | [Kvaser FD](https://canmeleon.com/en/firmware/kvaser-fd/) | Kvaser driver, CanKing and CANlib | CAN/CAN FD; 2xHS/4xHS modes depend on hardware, licensing and package. |
 | [VN16xx](https://github.com/CANmeleon/canmeleon-VN16xx-firmware) | Windows Vector driver, CANoe, CANalyzer, CANape and vxlapi | VN1610/VN1640A modes and channel configurations depend on hardware, firmware version and licensing. |
-| [ES582](https://canmeleon.com/en/firmware/es582/) | ETAS driver and INCA for CAN/CAN FD traffic and XCP/CCP calibration | Check the model, license and applicable package in Device Manager. |
+| [ES582](https://github.com/CANmeleon/canmeleon-es582-firmware) | ETAS driver and INCA for CAN/CAN FD traffic and XCP/CCP calibration | Check the model, license and applicable package in Device Manager. |
 | [ZLG USBCAN-II](https://canmeleon.com/en/firmware/zlg-usbcan-ii/) | ZCANPRO, CANtest and ControlCAN | Classic CAN; use the matching driver and library. |
 | [ZLG USBCAN-2E-U](https://canmeleon.com/en/firmware/zlg-usbcan-2e-u/) | ZCANPRO, CANtest and ControlCAN | CAN 2.0; select USBCAN-2E-U in the software. |
-| [ZLG USBCANFD](https://canmeleon.com/en/firmware/zlg-usbcanfd/) | ZLG driver and ZCAN API | CAN/CAN FD; device identity and channels depend on hardware and package. |
+| [ZLG USBCANFD](https://github.com/CANmeleon/canmeleon-zlg-usbcanfd-firmware) | ZLG driver and ZCAN API | CAN/CAN FD; device identity and channels depend on hardware and package. |
 | [CANalyst-II](https://canmeleon.com/en/firmware/canalyst-ii/) | WinUSB, USB-CAN Tool and ControlCAN | Two Classic CAN channels; select USB-CAN2.0 / VCI_USBCAN2. |
 
 The hardware supplies the connectors and physical channels; the active firmware determines the host driver and software interface. Devices with sufficient storage and applicable licensing can retain multiple firmware images and run one at a time.
+
+## Features and performance by firmware
+
+[Compare the 12 firmware parameter tables](docs/parameters/README.md): channel modes, bit rates, timestamps, typical throughput, software interfaces and limitations.
 
 ## Supported hardware
 
