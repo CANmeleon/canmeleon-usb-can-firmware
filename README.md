@@ -2,11 +2,13 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md)
 
-CANmeleon connects supported USB-CAN/CAN FD hardware to different CAN software ecosystems through selectable firmware. Choose the firmware for your workflow, then use CANmeleon Device Manager to install, update or switch it. This repository is the firmware overview and release hub.
+CANmeleon USB-CAN/CAN FD firmware lets supported adapters connect to different CAN software ecosystems on Windows and Linux. This repository is the firmware selection and download hub: compare SocketCAN, PCAN, Kvaser, Vector VN16xx, ETAS ES582 and ZLG workflows, then install or switch firmware with CANmeleon Device Manager.
 
 **[Download and install](#download-and-install)** · [Supported hardware](https://canmeleon.com/en/firmware/devices/) · [Device Manager](https://github.com/CANmeleon/canmeleon-device-manager) · [Full firmware guides](https://canmeleon.com/en/firmware/)
 
 ## Choose your firmware
+
+For Linux SocketCAN, start with GS USB or KCAN and its matching driver. For existing Windows software, select the firmware matching its driver or API in the table below.
 
 | CANmeleon firmware | Software or API workflow | Selection notes |
 | --- | --- | --- |
@@ -55,6 +57,16 @@ The linked **8.15.2** G2 package requires Device Manager **0.8.1 or later**. Use
 6. Install its required host driver and configure the corresponding CAN software.
 
 For a device in KH-Updater mode, use the recovery guide linked above.
+
+## Hardware, OEM integration and firmware development
+
+CANmeleon aims to meet USB-CAN/CAN FD needs across automotive, industrial systems, robotics, marine electronics and automation. Start with an existing adapter and firmware, or define a custom integration.
+
+- **Hardware selection:** use the [device catalog](https://canmeleon.com/en/firmware/devices/) to compare adapters, modules and controller ICs, then check the model specifications.
+- **OEM integration:** [contact Kunhong](https://www.kunhong-elec.com/en/contact) with channel count, electrical requirements, form factor and expected volume.
+- **Firmware development or porting:** [open a request](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues) with your MCU/board, USB and CAN peripherals, host OS, target API and update/recovery needs. Published packages apply to the listed hardware; a new board needs its own port.
+
+[Explore the CANmeleon solution platform](https://github.com/CANmeleon).
 
 ## Frequently asked questions
 

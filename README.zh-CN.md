@@ -2,11 +2,13 @@
 
 [English](README.md) · [简体中文](README.zh-CN.md)
 
-CANmeleon 通过可切换的固件，让支持的 USB-CAN/CAN FD 硬件连接不同 CAN 软件生态。按使用场景选择固件，再通过设备管理器安装、更新或切换。本仓库承载固件总览和统一发布入口。
+CANmeleon USB-CAN/CAN FD 固件让支持的适配器接入 Windows 和 Linux 上的不同 CAN 软件生态。本仓库是固件选型与下载中心：比较 SocketCAN、PCAN、Kvaser、Vector VN16xx、ETAS ES582 和 ZLG 的软件接入方式，再通过设备管理器安装或切换固件。
 
 **[下载与安装](#下载与安装)** · [支持设备](https://canmeleon.com/zh/firmware/devices/) · [设备管理器](https://github.com/CANmeleon/canmeleon-device-manager) · [完整固件指南](https://canmeleon.com/zh/firmware/)
 
 ## 按软件需求选择固件
+
+Linux SocketCAN 用户可从 GS USB 或 KCAN 及对应驱动开始；使用已有 Windows 软件时，按下表选择与其驱动或 API 对应的固件。
 
 | CANmeleon 固件 | 软件或 API 路径 | 选用条件 |
 | --- | --- | --- |
@@ -55,6 +57,16 @@ CANmeleon 通过可切换的固件，让支持的 USB-CAN/CAN FD 硬件连接不
 6. 安装对应电脑端驱动，配置目标 CAN 软件。
 
 设备进入 KH-Updater 模式时，按上方恢复指南操作。
+
+## 硬件、OEM 集成与固件开发
+
+CANmeleon 致力于满足汽车、工业、机器人、船舶和自动化等领域的 USB-CAN/CAN FD 需求。可从已有适配器和固件开始，也可提出定制集成需求。
+
+- **硬件选型：** 在[设备目录](https://canmeleon.com/zh/firmware/devices/)比较适配器、模块和控制器芯片，再核对对应型号的规格。
+- **OEM 集成：** [联系鲲弘](https://www.kunhong-elec.com/contact)，说明通道数、电气要求、尺寸及预计用量。
+- **固件开发或移植：** [提交需求](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues)，说明 MCU/开发板、USB 与 CAN 外设、电脑端系统、目标 API，以及更新和恢复要求。已发布包适用于列出的硬件，新开发板需要对应移植。
+
+[了解 CANmeleon 方案平台](https://github.com/CANmeleon/.github/blob/main/profile/README.zh-CN.md)。
 
 ## 常见问题
 
