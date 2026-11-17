@@ -62,7 +62,7 @@ For a device in KH-Updater mode, use the recovery guide linked above.
 
 CANmeleon is a USB-CAN/CAN FD ecosystem for hardware makers, chip vendors and developers across automotive, industrial systems, robotics, marine and automation applications. Hardware from different manufacturers can join through a matching firmware port.
 
-- **Open-source hardware:** participate in [CANmeleon-Hardware](https://gitee.com/sysmax/canmeleon-hardware). Its dual-channel and multi-channel reference designs are planned; use the [component manifest](https://gitee.com/sysmax/canmeleon-hardware/blob/master/OPEN_SOURCE_MANIFEST.yaml) for release availability.
+- **Open-source hardware:** explore [CANmeleon Hardware on GitHub](https://github.com/CANmeleon/canmeleon-hardware) for hardware documentation, design contributions and board proposals.
 - **Free firmware adaptation:** [submit an open-source board adaptation request](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md) with the project URL, board revision, MCU and target firmware/API. The program applies to selected board/firmware combinations.
 - **Hardware manufacturer solutions:** [contact CANmeleon](mailto:len2slaw@foxmail.com?subject=CANmeleon%20hardware%20integration) for USB-CAN/CAN FD software and firmware integration.
 - **Chip platform porting and maintenance:** [discuss your chip platform](mailto:len2slaw@foxmail.com?subject=CANmeleon%20chip%20platform%20porting) and the CANmeleon firmware families and maintenance scope you need.

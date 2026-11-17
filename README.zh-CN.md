@@ -62,7 +62,7 @@ Linux SocketCAN 用户可从 GS USB 或 KCAN 及对应驱动开始；使用已�
 
 CANmeleon 是面向硬件厂商、芯片厂商和开发者的 USB-CAN/CAN FD 生态平台，服务汽车、工业、机器人、船舶和自动化等应用。不同厂商的硬件可通过对应的固件移植参与生态。
 
-- **开源硬件：** 参与 [CANmeleon-Hardware](https://gitee.com/sysmax/canmeleon-hardware)。双通道、多通道参考设计处于筹备阶段，组件获取方式见[发布清单](https://gitee.com/sysmax/canmeleon-hardware/blob/master/OPEN_SOURCE_MANIFEST.yaml)。
+- **开源硬件：** 进入 GitHub 上的 [CANmeleon Hardware](https://github.com/CANmeleon/canmeleon-hardware/blob/main/README.zh-CN.md)，查看硬件资料、参与设计贡献或提出板卡方案。
 - **免费固件适配：** [提交开源板卡适配申请](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md)，附项目链接、板卡修订、MCU 和目标固件/API。计划面向部分板卡与固件组合。
 - **硬件厂商解决方案：** [联系 CANmeleon](mailto:len2slaw@foxmail.com?subject=CANmeleon%20hardware%20integration)，沟通 USB-CAN/CAN FD 软件和固件集成需求。
 - **芯片平台移植与维护：** [沟通目标芯片平台](mailto:len2slaw@foxmail.com?subject=CANmeleon%20chip%20platform%20porting)、所需 CANmeleon 固件系列及维护范围。
