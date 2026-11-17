@@ -33,9 +33,9 @@ Linux SocketCAN 用户可从 GS USB 或 KCAN 及对应驱动开始；使用已�
 
 ## 支持硬件
 
-[设备目录](https://canmeleon.com/zh/firmware/devices/)按完整型号列出可选固件，包括 KH-UCANFD-LITE-X2U、KH-UCANFD-PRO-X2U 和 KH-UCANFD-PRO-X4U。其他适配器、嵌入式模块与控制器芯片分别有其固件支持范围。
+鲲弘 KHCM 系列芯片及衍生硬件是商业适配案例。[设备目录](https://canmeleon.com/zh/firmware/devices/)按完整型号列出可选固件，包括 KH-UCANFD-LITE-X2U、KH-UCANFD-PRO-X2U 和 KH-UCANFD-PRO-X4U。其他适配器、嵌入式模块与控制器芯片分别有其固件支持范围。
 
-下载前核对完整型号，连接管理器后确认可用固件、模式、通道和存储。引脚、接线及硬件规格通过设备目录进入鲲弘文档查看。
+下载前核对完整型号，连接管理器后确认可用固件、模式、通道和存储。引脚、接线及硬件规格通过设备目录进入对应型号文档查看。
 
 ## 下载与安装
 
@@ -58,15 +58,17 @@ Linux SocketCAN 用户可从 GS USB 或 KCAN 及对应驱动开始；使用已�
 
 设备进入 KH-Updater 模式时，按上方恢复指南操作。
 
-## 硬件、OEM 集成与固件开发
+## 开源参与与商业技术服务
 
-CANmeleon 致力于满足汽车、工业、机器人、船舶和自动化等领域的 USB-CAN/CAN FD 需求。可从已有适配器和固件开始，也可提出定制集成需求。
+CANmeleon 是面向硬件厂商、芯片厂商和开发者的 USB-CAN/CAN FD 生态平台，服务汽车、工业、机器人、船舶和自动化等应用。不同厂商的硬件可通过对应的固件移植参与生态。
 
-- **硬件选型：** 在[设备目录](https://canmeleon.com/zh/firmware/devices/)比较适配器、模块和控制器芯片，再核对对应型号的规格。
-- **OEM 集成：** [联系鲲弘](https://www.kunhong-elec.com/contact)，说明通道数、电气要求、尺寸及预计用量。
-- **固件开发或移植：** [提交需求](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues)，说明 MCU/开发板、USB 与 CAN 外设、电脑端系统、目标 API，以及更新和恢复要求。已发布包适用于列出的硬件，新开发板需要对应移植。
+- **开源硬件：** 参与 [CANmeleon-Hardware](https://gitee.com/sysmax/canmeleon-hardware)。双通道、多通道参考设计处于筹备阶段，组件获取方式见[发布清单](https://gitee.com/sysmax/canmeleon-hardware/blob/master/OPEN_SOURCE_MANIFEST.yaml)。
+- **免费固件适配：** [提交开源板卡适配申请](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md)，附项目链接、板卡修订、MCU 和目标固件/API。计划面向部分板卡与固件组合。
+- **硬件厂商解决方案：** [联系 CANmeleon](mailto:len2slaw@foxmail.com?subject=CANmeleon%20hardware%20integration)，沟通 USB-CAN/CAN FD 软件和固件集成需求。
+- **芯片平台移植与维护：** [沟通目标芯片平台](mailto:len2slaw@foxmail.com?subject=CANmeleon%20chip%20platform%20porting)、所需 CANmeleon 固件系列及维护范围。
+- **定制固件开发：** [发送定制需求](mailto:len2slaw@foxmail.com?subject=CANmeleon%20custom%20firmware)，说明 USB/CAN 接口、电脑端系统/API、功能和计划时间。
 
-[了解 CANmeleon 方案平台](https://github.com/CANmeleon/.github/blob/main/profile/README.zh-CN.md)。
+免费二进制固件与开源固件分别采用对应的获取和许可条款。[了解 CANmeleon 生态与商业适配案例](https://github.com/CANmeleon/.github/blob/main/profile/README.zh-CN.md)。
 
 ## 常见问题
 

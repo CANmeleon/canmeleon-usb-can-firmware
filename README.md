@@ -33,9 +33,9 @@ The hardware supplies the connectors and physical channels; the active firmware 
 
 ## Supported hardware
 
-The [device catalog](https://canmeleon.com/en/firmware/devices/) lists the firmware choices for each full model number, including KH-UCANFD-LITE-X2U, KH-UCANFD-PRO-X2U and KH-UCANFD-PRO-X4U. Other adapters, embedded modules and controller ICs have their own firmware selections.
+Commercial adaptation examples include Kunhong KHCM-series chips and derived hardware. The [device catalog](https://canmeleon.com/en/firmware/devices/) lists the firmware choices for each full model number, including KH-UCANFD-LITE-X2U, KH-UCANFD-PRO-X2U and KH-UCANFD-PRO-X4U. Other adapters, embedded modules and controller ICs have their own firmware selections.
 
-Match the complete model number before downloading. Connect the device in Device Manager to confirm available firmware, modes, channel counts and storage. For pinouts and wiring, follow the catalog links to Kunhong hardware documentation.
+Match the complete model number before downloading. Connect the device in Device Manager to confirm available firmware, modes, channel counts and storage. For pinouts and wiring, follow the catalog links to the corresponding model documentation.
 
 ## Download and install
 
@@ -58,15 +58,17 @@ The linked **8.15.2** G2 package requires Device Manager **0.8.1 or later**. Use
 
 For a device in KH-Updater mode, use the recovery guide linked above.
 
-## Hardware, OEM integration and firmware development
+## Open-source participation and commercial services
 
-CANmeleon aims to meet USB-CAN/CAN FD needs across automotive, industrial systems, robotics, marine electronics and automation. Start with an existing adapter and firmware, or define a custom integration.
+CANmeleon is a USB-CAN/CAN FD ecosystem for hardware makers, chip vendors and developers across automotive, industrial systems, robotics, marine and automation applications. Hardware from different manufacturers can join through a matching firmware port.
 
-- **Hardware selection:** use the [device catalog](https://canmeleon.com/en/firmware/devices/) to compare adapters, modules and controller ICs, then check the model specifications.
-- **OEM integration:** [contact Kunhong](https://www.kunhong-elec.com/en/contact) with channel count, electrical requirements, form factor and expected volume.
-- **Firmware development or porting:** [open a request](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues) with your MCU/board, USB and CAN peripherals, host OS, target API and update/recovery needs. Published packages apply to the listed hardware; a new board needs its own port.
+- **Open-source hardware:** participate in [CANmeleon-Hardware](https://gitee.com/sysmax/canmeleon-hardware). Its dual-channel and multi-channel reference designs are planned; use the [component manifest](https://gitee.com/sysmax/canmeleon-hardware/blob/master/OPEN_SOURCE_MANIFEST.yaml) for release availability.
+- **Free firmware adaptation:** [submit an open-source board adaptation request](https://github.com/CANmeleon/canmeleon-usb-can-firmware/issues/new?template=open_hardware_adaptation.md) with the project URL, board revision, MCU and target firmware/API. The program applies to selected board/firmware combinations.
+- **Hardware manufacturer solutions:** [contact CANmeleon](mailto:len2slaw@foxmail.com?subject=CANmeleon%20hardware%20integration) for USB-CAN/CAN FD software and firmware integration.
+- **Chip platform porting and maintenance:** [discuss your chip platform](mailto:len2slaw@foxmail.com?subject=CANmeleon%20chip%20platform%20porting) and the CANmeleon firmware families and maintenance scope you need.
+- **Custom firmware:** [send your requirements](mailto:len2slaw@foxmail.com?subject=CANmeleon%20custom%20firmware), including USB/CAN interfaces, host OS/API, features and schedule.
 
-[Explore the CANmeleon solution platform](https://github.com/CANmeleon).
+Free binary firmware and open-source firmware have separate access and licensing terms. [Explore the CANmeleon ecosystem and commercial adaptation examples](https://github.com/CANmeleon).
 
 ## Frequently asked questions
 
